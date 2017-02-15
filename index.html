@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ANGAPP</title>
+
+    <!-- Bootstrap core CSS Darkly Theme from www.bootwatch.com -->
+    <link href="app/styles/bootstrap.min.css" rel="stylesheet">
+      
+  </head>
+
+  <body ng-app="myApp">
+      
+    <header ng-include="'app/views/navbar.html'"></header>  
+     
+    <div class="container">     
+        
+        <main>
+            <div ui-view></div>
+        </main>  
+    
+    </div>
+  
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="app/scripts/angular.min.js"></script>
+    <script src="app/scripts/angular-ui-router.js"></script>
+    
+    <script src="app/app.js"></script>         
+    <script src="app/controllers/homeController.js"></script>
+    
+    <script src="app/services/onlyDigitsDirective.js"></script> 
+    <script src="app/services/personsFactory.js"></script>
+    <script src="app/services/passDataService.js"></script>
+      
+  </body>
+</html>
